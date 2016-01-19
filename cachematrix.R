@@ -3,8 +3,8 @@
 
 ## Write a short comment describing this function
 
-makeCacheMatrix <- function(x = matrix()) {
-        inverse<- NULL
+makeCacheMatrix <- function(x = matrix()) {             # this function sets the value of matrix, get the value of matrix
+        inverse<- NULL                                  # sets the inverse of matrix and gets the inverse of a matrix        
         set<- function(y){
                 x<<-y
                 inverse<<-NULL
@@ -18,7 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## below function checks wheather or not the inverse of a matrix is calculated and in cache  
+## If the inverse is already calculated , it returns the value from cached, if not it calculated the inverse and returns the same.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
