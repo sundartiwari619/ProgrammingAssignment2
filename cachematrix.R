@@ -1,10 +1,11 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## below function sets the value of matrix, get the value of matrix
+## sets the inverse of matrix and gets the inverse of a matrix        
 
-makeCacheMatrix <- function(x = matrix()) {             # this function sets the value of matrix, get the value of matrix
-        inverse<- NULL                                  # sets the inverse of matrix and gets the inverse of a matrix        
+makeCacheMatrix <- function(x = matrix()) {             
+        inverse<- NULL                                   
         set<- function(y){
                 x<<-y
                 inverse<<-NULL
